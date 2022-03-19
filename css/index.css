@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url("../resources/manrope.medium.otf");
+}
+
+body{
+    background-color: hsl(217, 19%, 24%);
+    font-weight: 800;
+    font-family: Manrope;
+    position: relative;
+}
+
+#stacks{
+    height: 60px;
+    width: 0px;
+    background-color: hsla(150, 100%, 66%, 0.623);
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    border-radius: 0 10px 10px 0;
+    animation-name: stacks;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+#stacks p{
+    width: 50px;
+    background-color: transparent;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    font-family: Manrope;
+    font-size: 17px;
+    font-weight: 900;
+    margin: 0 -5px 0 -230px;
+    animation-name: stack;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+.html5{
+    background-color: #F15931;
+    padding: 4px;
+    border-radius: 0 0 25px 25px;
+    border-top: 5px black solid;
+    height: 70px;
+    margin-left: 10px;
+}
+
+.css3{
+    background-color: #017DC5;
+    padding: 4px;
+    border-radius: 0 0 25px 25px;
+    border-top: 5px black solid;
+    height: 70px;
+    margin-left: 10px;
+}
+
+.js6{
+    background-color: #F58233;
+    padding: 4px;
+    border-radius: 0 0 25px 25px;
+    border-top: 5px black solid;
+    height: 70px;
+    margin-left: 10px;
+}
+
+#container{
+    height: auto;
+    width: 80%;
+    background-color: hsl(217, 19%, 38%);
+    margin: 10vh auto;
+    border-top: 7px rgb(173, 216, 230) solid;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px 5px 100px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#advice{
+    color: hsl(150, 100%, 66%);
+    padding: 40px;
+    word-spacing: 5px;
+}
+
+#quote{
+    color: white;
+    font-size: 28px;
+    padding: 5px;
+}
+
+#quote-green{
+    color: hsl(150, 100%, 66%);
+}
+
+#breaker{
+    height: 20px;
+    width: 440px;
+    color: black;
+    background-color: transparent;
+    position: absolute;
+    margin: 50px auto;
+    bottom: 0;
+    background-image: url("../resources/pattern-divider-desktop.svg");
+    background-repeat: no-repeat;
+}
+
+#dice{
+    height: 50px;
+    width: 50px;/*
+    margin: 50px auto 0 calc(50% - 30px);*/
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    position: absolute;
+    margin-bottom: -30px;
+    bottom: 0;
+    cursor: pointer;
+}
+
+#dice:hover{
+    box-shadow: 0px 0px 5px hsl(150, 100%, 66%);
+}
+
+#dice img{
+    margin-top: calc(50px/3);
+}
+
+#attribute{
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(to bottom right, aqua, rgba(27, 156, 27, 0.781));
+    margin: -50px 0 0 10px;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: width 1s;
+}
+
+#attribute:hover{
+    width: 310px;
+}
+
+#attribute img{
+    height: 35px;
+    width: 35px;
+    float: left;
+    padding: 5px 10px 5px 0;
+    margin: 0px 0 0 5px;
+}
+
+#attribute p{
+    width: 300px;
+    padding: 5px 10px;
+    margin: 3px 0;
+}
+
+#attribute a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+@keyframes stacks {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 250px;
+    }
+}
+
+@keyframes stack {
+    0%{
+        margin: 0 -5px 0 -230px;
+    }
+    80%{
+        margin: 0 -5px 0 20px;
+    }
+    100%{
+        margin: 0 -5px 0 10px;
+    }
+}
